@@ -10,8 +10,9 @@ void TestParametres(vector<int>& parametres) {
 
 int main() {
     try {
-      for(size_t i =1;;i*=3){
-         TestParametres(vector<int>(i, 1));
+      for(size_t i =1;;i++){
+        vector<int>parametres(i,1);
+         TestParametres(parametres);
 
 }} catch (const exception& e) {
       cerr << "Error  : " << e.what() << endl;
